@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <nav>
+        <a href="/fruits/new">Create a New Fruit</a>
+    </nav>    
+<head>
+        <meta charset="utf-8">
+        <title>Fruits App</title>
+    </head>
+    <body>
+        <h1>Fruits index page</h1>
+        <ul>
+            <% for(let i = 0; i < allFruits.length; i++) { %>
+                <li>
+                    <a href="/fruits/<%=i%>"><%=allFruits[i].name %></a>
+                </li>
+            <% } %>
+        </ul>
+    </body>
+</html>
